@@ -901,7 +901,7 @@ p {
 .cta-strip-inner {
 	max-width: 1400px;
 	margin: 0 auto;
-	background: linear-gradient(135deg, var(--wood-dark) 0%, var(--wood) 55%, var(--olive-dark) 100%);
+	background: linear-gradient(135deg, #1c1612 0%, #2a211b 52%, #1f2b24 100%);
 	border-radius: 28px;
 	padding: 42px 40px;
 	display: flex;
@@ -923,7 +923,7 @@ p {
 
 .cta-strip-content p {
 	margin: 0;
-	color: rgba(255,255,255,0.85);
+	color: rgba(255,255,255,0.94);
 	font-size: 1.05rem;
 }
 
