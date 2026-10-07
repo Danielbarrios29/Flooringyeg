@@ -1,8 +1,19 @@
-Página principal: https://danielbarrios29.github.io/Flooringyeg/
-
-Servicios: https://danielbarrios29.github.io/Flooringyeg/services.html
-
-Contacto: https://danielbarrios29.github.io/Flooringyeg/contact.html
-
-Acerca de: https://danielbarrios29.github.io/Flooringyeg/about.html
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://danielbarrios29.github.io/Flooringyeg/</loc>
+	</url>
+	<url>
+		<loc>https://danielbarrios29.github.io/Flooringyeg/hardwood-installation-edmonton/index.html</loc>
+	</url>
+	<url>
+		<loc>https://danielbarrios29.github.io/Flooringyeg/laminate-flooring-edmonton/index.html</loc>
+	</url>
+	<url>
+		<loc>https://danielbarrios29.github.io/Flooringyeg/lvp-installation-edmonton/index.html</loc>
+	</url>
+	<url>
+		<loc>https://danielbarrios29.github.io/Flooringyeg/commercial-flooring-edmonton/index.html</loc>
+	</url>
+</urlset>
 
