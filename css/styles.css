@@ -24,6 +24,406 @@ body {
 
 /* Desktop layout fix: offset content from the fixed sidebar so the page fills the available width cleanly */
 @media (min-width: 901px) {
+    body {
+        padding-left: 280px;
+    }
+}
+
+main {
+    width: min(1400px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 0 0 100px;
+}
+
+.services-section,
+.why-choose-section,
+.gallery-section,
+.testimonials-section,
+.features-section,
+.flooring-services-section,
+.serving-edmonton-section,
+.contact-section,
+.about-section,
+.cta-strip,
+.stats-section,
+.hero-section,
+.footer-section {
+    width: 100%;
+}
+
+.services-container,
+.gallery-grid,
+.features-grid,
+.benefits-grid,
+.footer-content,
+.cta-strip-inner,
+.contact-form-wrap,
+.about-section,
+.stats-container {
+    width: min(1400px, calc(100% - 32px));
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.w3-top {
+    left: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-size: clamp(3.2rem, 5vw, 5rem);
+}
+
+h2 {
+    font-size: clamp(2.8rem, 3vw, 3rem);
+}
+
+h3 {
+    font-size: clamp(1.8rem, 2vw, 2.2rem);
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+}
+
+/* --- Navigation Sidebar --- */
+.w3-sidebar {
+    height: 100%;
+    width: 280px;
+    background: linear-gradient(135deg, #fffdf9 0%, #f9f5f0 100%);
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    z-index: 30;
+    overflow-y: auto;
+    transform: translateX(-110%);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    border-right: 2px solid #e8dcc9;
+    padding-top: 0;
+}
+
+.w3-sidebar.open {
+    transform: translateX(0);
+}
+
+.sidebar-brand {
+    padding: 30px 20px;
+    border-bottom: 2px solid #e8dcc9;
+    text-align: center;
+    background: linear-gradient(135deg, #f5efe8 0%, #fffdf9 100%);
+}
+
+.sidebar-brand-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #4d2e1a;
+    line-height: 1.2;
+    margin: 0;
+    letter-spacing: 0.05em;
+}
+
+.sidebar-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #e8dcc9, transparent);
+    margin: 20px 0;
+}
+
+.w3-bar-block {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background: transparent;
+}
+
+.w3-bar-item {
+    padding: 10px 12px 10px 14px;
+    width:100%;
+    border:none;
+    display:block;
+    outline:0;
+    white-space:normal;
+    font-size: 12px;
+    font-weight: 600;
+    color: #4d2e1a;
+    letter-spacing: 0.02em;
+    margin: 0;
+    text-align: left;
+}
+
+/* --- Hamburger Menu --- */
+.w3-top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 40;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hamburger-position {
+    position: fixed;
+    top: 12px;
+    left: 18px;
+    z-index: 41;
+}
+
+.hamburger-btn {
+    background: linear-gradient(135deg, #4d2e1a, #6b4423) !important;
+    color: #fff !important;
+    border: none !important;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 28px !important;
+    box-shadow: 0 4px 12px rgba(77, 46, 26, 0.25) !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0 !important;
+}
+
+.hamburger-btn:hover {
+    background: linear-gradient(135deg, #6b4423, #8b5a36) !important;
+    box-shadow: 0 6px 16px rgba(77, 46, 26, 0.35) !important;
+    transform: translateY(-2px);
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    position: relative;
+    height: 70vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+.hero-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(25, 18, 14, 0.5);
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: #fff;
+    max-width: 920px;
+    padding: 40px 20px;
+    animation: fadeInUp 0.8s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-title {
+    font-size: clamp(3rem, 6vw, 6rem);
+    color: #fffaf5;
+    text-shadow: 0 5px 20px rgba(0,0,0,0.35);
+}
+
+.hero-tagline {
+    font-size: clamp(1.35rem, 2vw, 2rem);
+}
+
+.hero-description {
+    font-size: 15px;
+    line-height: 1.9;
+    max-width: 860px;
+}
+
+.hero-cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 18px 32px;
+    font-size: 0.92rem;
+    border-radius: 999px;
+    font-weight: 800;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+
+.cta-primary {
+    background: linear-gradient(135deg, var(--wood) 0%, var(--gold) 100%);
+    box-shadow: 0 16px 30px rgba(106, 71, 50, 0.28);
+    color: var(--wood-dark);
+}
+
+.cta-primary:hover {
+    background: linear-gradient(135deg, #6b8a76, #7a9a85);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(85, 119, 99, 0.35);
+}
+
+.cta-secondary {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.cta-secondary:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(-3px);
+}
+
+.cta-footer {
+    background: #557763;
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 0.95rem;
+}
+
+.cta-footer:hover {
+    background: #6b8a76;
+}
+
+/* --- Statistics Section --- */
+.stats-section {
+    background: linear-gradient(180deg, #f3efe9 0%, #e9e1d7 100%);
+    padding: 70px 20px;
+}
+
+.stats-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.stat-card {
+    background: rgba(255,255,255,0.92);
+    border-radius: 22px;
+    padding: 36px 28px;
+    box-shadow: var(--shadow-soft);
+    border-top: 4px solid var(--gold);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.stat-number {
+    font-size: 2.6rem;
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+}
+
+/* --- Services Section --- */
+.services-section {
+    background: linear-gradient(135deg, #fff, #fffaf9);
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: linear-gradient(180deg, #fff 0%, #f9f5f1 100%);
+    border-radius: 22px;
+    padding: 36px 28px 30px;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid rgba(106,71,50,0.08);
+    border-top: 5px solid var(--wood);
+    position: relative;
+}
+
+.service-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    background: linear-gradient(135deg, rgba(106,71,50,0.12), rgba(217,176,109,0.18));
+    border-radius: 18px;
+    font-size: 1.7rem;
+    margin-bottom: 18px;
+    box-shadow: inset 0 0 0 1px rgba(106,71,50,0.05);
+}
+/* ===================================
+   PARKER PRECISION FLOORING - STYLES
+   Professional Flooring Contractor
+   ==================================== */
+
+/* --- Base Styles --- */
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	color: #333;
+	font-size: 20px;
+	line-height: 1.8;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(180deg, #f5f1eb 0%, #f8f5f1 100%);
+}
+
+/* Desktop layout fix: offset content from the fixed sidebar so the page fills the available width cleanly */
+@media (min-width: 901px) {
 	body {
 		padding-left: 280px;
 	}
@@ -1100,3 +1500,49 @@ p {
 	line-height: 1.6;
 	font-family: 'Inter', sans-serif;
 }
+
+/* === Accessibility & Performance Enhancements === */
+
+/* Skip link visible on keyboard focus */
+.skip-link {
+	position: absolute;
+	left: -999px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+.skip-link:focus {
+	left: 10px;
+	top: 10px;
+	width: auto;
+	height: auto;
+	background: #111;
+	color: #fff;
+	padding: 8px 12px;
+	z-index: 10000;
+	border-radius: 6px;
+}
+
+/* Clear, visible focus outlines for keyboard users */
+:focus {
+	outline: 3px solid #ffbf47;
+	outline-offset: 2px;
+}
+
+/* Improve image responsiveness and lazy-loading behavior */
+.gallery-item img,
+.hero-bg-image,
+.about-image-wrap img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* Slight contrast adjustments for better readability */
+body, h1, h2, h3, p, a {
+	color: #111;
+}
+
+/* Reduce motion for sensitive users already handled above with prefers-reduced-motion */
+
