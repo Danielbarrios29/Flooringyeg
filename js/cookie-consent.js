@@ -39,7 +39,7 @@
   function onAccept(){
     setCookie(CONSENT_COOKIE,'accepted',COOKIE_DAYS);
     hideBanner();
-    loadGA();
+    // Banner-only mode: do not auto-load Google Analytics here
   }
 
   function onReject(){
