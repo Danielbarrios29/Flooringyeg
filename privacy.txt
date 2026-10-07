@@ -1,0 +1,38 @@
+Privacy Policy
+================
+
+Privacy Policy of FlooringYEG (https://danielbarrios29.github.io/Flooringyeg/)
+
+Last updated: October 7, 2026
+
+1. Data Controller
+Parker Precision Flooring (owner) is the data controller for personal data collected via this website.
+
+2. Types of Data Collected
+- Contact information (name, email, phone) when you submit forms.
+- Usage data (pages visited, timestamps, referrer) collected via analytics tools.
+- Cookies and similar tracking technologies as described below.
+
+3. Purpose of Processing
+We collect and process personal data to respond to requests, provide services, improve the website, and for analytics and security.
+
+4. Cookies
+This site uses cookies to enable website functionality and (optionally) analytics. You can accept or reject analytics cookies via the cookie banner. Essential cookies required for site operation may be used regardless of consent.
+
+5. Data Retention
+Personal data is retained only as long as necessary to fulfil the purposes described above or as required by law.
+
+6. Data Sharing
+We do not sell personal data. We may share data with service providers (hosting, analytics providers) who act as processors under applicable law.
+
+7. Your Rights
+You may request access, correction, deletion, restriction, or portability of your personal data, and object to processing where applicable. Contact information is available below.
+
+8. Contact
+Email: parkerprecisionflooring@gmail.com
+Address: 9206 51 Ave NW, Edmonton, AB T6E 5L8
+
+9. Changes to this Policy
+We may update this policy; the "Last updated" date will change when we do.
+
+This text was created based on the site's existing privacy PDF and adapted to a plain-text `privacy.txt` for easy linking and display.
