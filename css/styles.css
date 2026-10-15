@@ -1645,6 +1645,40 @@ body, h1, h2, h3, p, a {
 .recommended-visit a { color: #1f5a36; text-decoration: underline; }
 .recommended-cta { margin-top: 14px; }
 .recommended-cta .cta-button { padding: 16px 32px; font-size: 1rem; }
+
+/* --- Info bubble styles for service/benefit paragraphs --- */
+.info-bubble {
+	background: linear-gradient(180deg, #ffffff 0%, #fbfbf9 100%);
+	border: 1px solid rgba(38,28,19,0.06);
+	border-radius: 18px;
+	padding: 22px;
+	margin-bottom: 18px;
+	box-shadow: 0 12px 30px rgba(20,20,20,0.06);
+}
+.info-bubble h3 {
+	margin: 0 0 8px 0;
+	font-size: clamp(1.6rem, 2.4vw, 2rem);
+	color: #243022;
+}
+.info-bubble p {
+	margin: 0;
+	font-size: 1.18rem;
+	line-height: 1.6;
+	color: #333;
+}
+
+/* Grid: show two bubbles side-by-side on larger screens */
+@media (min-width: 900px) {
+	.benefit-list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+	}
+	.service-content-wrapper .info-bubble,
+	.serving-edmonton-section .info-bubble {
+		max-width: none;
+	}
+}
 .recommended-visit a {
 	color: #2a5d3a;
 	text-decoration: underline;
