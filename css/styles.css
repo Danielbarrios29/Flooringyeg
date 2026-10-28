@@ -1034,6 +1034,20 @@ h3 {
 .gallery-section {
 	background: #f9f9f9;
 }
+.section-image,
+.service-image {
+	max-width: 900px;
+	margin: 22px auto;
+	border-radius: 18px;
+	overflow: hidden;
+	box-shadow: var(--shadow-soft);
+}
+.section-image img,
+.service-image img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
 
 .gallery-grid {
 	display: grid;
@@ -1089,77 +1103,9 @@ h3 {
 	opacity: 1;
 }
 
-/* --- Testimonials Section --- */
-.testimonials-section {
-	background: linear-gradient(135deg, #f5f5f5, #efefef);
-}
-
-.testimonials-grid {
-	display: grid;
-	grid-template-columns: repeat(3, minmax(0, 1fr));
-	gap: 30px;
-	max-width: 1400px;
-	margin: 0 auto;
-}
-
-.testimonial-card {
-	background: #fff;
-	padding: 35px;
-	border-radius: 12px;
-	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-	transition: all 0.3s ease;
-	border-left: 5px solid #557763;
-	position: relative;
-}
-
-.testimonial-card::before {
-	content: '"';
-	position: absolute;
-	top: 10px;
-	left: 15px;
-	font-size: 3rem;
-	color: rgba(85, 119, 99, 0.1);
-	font-family: Georgia, serif;
-	line-height: 1;
-}
-
-.testimonial-card:hover {
-	transform: translateY(-5px);
-	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-}
-
-.star-rating {
-	font-size: 1.3rem;
-	color: #ffc107;
-	margin-bottom: 15px;
-	letter-spacing: 0.1em;
-}
-
-.testimonial-text {
-	color: #333;
-	font-style: italic;
-	line-height: 1.8;
-	margin-bottom: 15px;
-	font-size: 0.95rem;
-}
-
-.testimonial-author {
-	color: #4d2e1a;
-	font-weight: 700;
-	margin: 0;
-	font-size: 0.9rem;
-}
-
-/* --- Footer Section --- */
-.footer-section {
-	padding-top: 60px;
-}
-
 .footer-content {
-	max-width: 1400px;
-	margin: 0 auto;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	grid-template-columns: repeat(4, minmax(0, 1fr));
 	gap: 50px;
 	margin-bottom: 50px;
 }
@@ -1222,6 +1168,27 @@ h3 {
 	font-size: 1.1rem;
 	transition: all 0.3s ease;
 	border: 2px solid transparent;
+}
+
+.social-icon svg {
+	width: 20px;
+	height: 20px;
+	display: block;
+}
+
+.social-links--small {
+	gap: 10px;
+}
+
+.social-links--small .social-icon {
+	width: 34px;
+	height: 34px;
+	font-size: 0.9rem;
+}
+
+.social-links--small .social-icon svg {
+	width: 16px;
+	height: 16px;
 }
 
 .social-icon:hover {
@@ -1701,7 +1668,6 @@ h3 {
 
 /* Improve image responsiveness and lazy-loading behavior */
 .gallery-item img,
-.hero-bg-image,
 .about-image-wrap img {
 	max-width: 100%;
 	height: auto;
